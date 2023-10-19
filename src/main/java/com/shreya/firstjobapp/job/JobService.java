@@ -1,5 +1,8 @@
 package com.shreya.firstjobapp.job;
 
-public interface JobService {
+import java.util.List;
 
+public interface JobService {
+    List<Job> findAll();
+    void createJob(Job job);
 }
